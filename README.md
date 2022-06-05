@@ -20,9 +20,9 @@ Operating Voltage : 3.9V ~ 5.1V<br>
 Battery Voltage Indication : Red light below 3.9V, Green light above 4.2V<br>
 
 
-LEGO Part :
-No.4666579 Axle Pin without Friction x 4pcs
-No.55982 Black Wheel 18mm D. x 14mm with Axle Hole x 4pcs
-No.43903 Technic Tread (Small) x 2pcs
+LEGO Part :<br>
+No.4666579 Axle Pin without Friction x 4pcs<br>
+No.55982 Black Wheel 18mm D. x 14mm with Axle Hole x 4pcs<br>
+No.43903 Technic Tread (Small) x 2pcs<br>
 熱縮套管 heat shrink tube Φ2mm<div>ESP32-CAM Motor Shield - TANK GO ! Build Instruction 程式燒錄與組裝說明</div>
 <div><a href="https://www.youtube.com/watch?v=bYgs__T8IUY"><img src="https://img.youtube.com/vi/bYgs__T8IUY/0.jpg"></a></div>
