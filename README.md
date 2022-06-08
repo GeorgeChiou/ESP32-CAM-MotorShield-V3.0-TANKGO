@@ -19,6 +19,7 @@ Active Mode : 2.5A<br>
 Operating Voltage : 3.9V ~ 5.1V<br>
 Battery Voltage Indication : Red light below 3.9V, Green light above 4.2V<br>
 
+電商販售連結 ICSHOP https://www.icshop.com.tw/product-page.php?28709<br>
 
 LEGO Part :<br>
 No.4666579 Axle Pin without Friction x 4pcs<br>
