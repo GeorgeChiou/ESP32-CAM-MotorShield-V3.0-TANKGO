@@ -8,6 +8,9 @@
 // 增加 Damage_ValueZ >= 5;
 // 被擊中到 5次 後暫停運作並且砲塔會左右搖擺，需按下 PS Button 解除再重新開始。
 
+// 最後編輯 2022-6-10 by ShinWei Chiou
+// Disable brownout detector
+
 /*
   Board: ESP32 Wrover Module
   Upload Speed: 115200
@@ -32,6 +35,9 @@
   https://github.com/DFRobot/DFRobotDFPlayerMini
   <https://www.dfrobot.com/product-1121.html>
 */
+
+#include "soc/soc.h"
+#include "soc/rtc_cntl_reg.h"
 
 #include <Ps3Controller.h>
 String ESP32_MAC_Address;
@@ -182,6 +188,9 @@ void Move_Damage()
 
 void setup()
 {
+  // Disable brownout detector
+  WRITE_PERI_REG(RTC_CNTL_BROWN_OUT_REG, 0);
+
   // 設定 UART 通訊
   Serial.begin(9600);
 

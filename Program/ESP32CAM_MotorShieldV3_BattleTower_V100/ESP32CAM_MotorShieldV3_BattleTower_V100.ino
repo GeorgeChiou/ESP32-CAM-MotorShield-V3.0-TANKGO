@@ -1,6 +1,9 @@
 // 最後編輯 2022-3-20 by ShinWei Chiou
 // 初版
 
+// 最後編輯 2022-6-10 by ShinWei Chiou
+// Disable brownout detector
+
 /*
   Board: ESP32 Wrover Module
   Upload Speed: 115200
@@ -17,6 +20,9 @@
   https://github.com/DFRobot/DFRobotDFPlayerMini
   <https://www.dfrobot.com/product-1121.html>
 */
+
+#include "soc/soc.h"
+#include "soc/rtc_cntl_reg.h"
 
 #include <HardwareSerial.h>
 #include <DFRobotDFPlayerMini.h>
@@ -158,6 +164,9 @@ void servo_angle(int channel, int angle)
 /*------------------------------------------------------------*/
 void setup()
 {
+  // Disable brownout detector
+  WRITE_PERI_REG(RTC_CNTL_BROWN_OUT_REG, 0);
+
   // Initialize serial communications at 9600 bps:
   Serial.begin(9600);
 
